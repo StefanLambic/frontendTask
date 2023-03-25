@@ -1,0 +1,345 @@
+
+
+
+//Header Section
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 27.5px 230px;
+  height: 100px;
+  background-color: #803E38;
+  @media only screen and (min-width: 768px) and (max-width: 1024px) { 
+    padding: 0px 20px;
+  }
+  @media only screen and (min-width: 120px) and (max-width: 767px) {
+    padding: 0px 20px;
+   }
+&__logo { 
+  display: inline-block;
+}
+ }
+ 
+
+
+// Navbar section 
+.navbar {
+  display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 30px;
+   flex-direction: row;
+   max-height: 100px;
+&__list {
+  display: flex;
+  flex-direction: row; 
+  gap: 30px;
+  @media (max-width: 992px) { 
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 60px;
+    flex-direction: column;
+  }
+}
+&__item {
+ position: relative;
+  @media (max-width: 992px) { 
+   padding-bottom: 16px;
+   }
+ }
+&__link {
+ position: relative;
+ display: block;
+  font-family: $font-secondary;
+ font-size: 25px;
+ line-height: 27px;
+ padding-right: 30px; 
+ color: $clr-link;
+ &:hover {
+  color: $clr-light;
+}
+ @media only screen and (min-width: 768px) and (max-width: 1024px) { 
+  padding-right: 0;
+  font-size: 20px;
+  line-height: 25px;
+  }
+  @media only screen and (min-width: 120px) and (max-width: 767px) {
+    font-size: 18px;
+    line-height: 22px;
+    padding-right: 0;
+   }
+ }
+&__arrow {
+  display: inline-block;
+  position: absolute;
+  right: 5px;
+  top: 12px;
+  @media (max-width: 992px) {
+    right: 10px;
+    top: -3px;
+   }
+&--rotate {
+  @media (max-width: 992px) {
+    transform:rotate(180deg);
+    transition: $transition;
+  }
+ }
+}
+ 
+
+&__bar {
+  display: block;
+  width: 36px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: $clr-light;
+}
+
+}
+
+
+//Submenu section
+.submenu {
+  display: flex;
+  flex-direction: row; 
+  gap: 30px;
+@media only screen and (min-width: 1025px) { 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   position: absolute;
+   min-width: 220px;
+   top:51px;
+   gap: 13px;
+   background-color: #803E38;
+   left: -50px;
+   opacity: 0;
+   padding: 20px;
+   z-index: 1;
+  
+}
+@media (max-width: 992px) { 
+    display: none;
+  }
+&__link {
+  display: block;
+  font-family: $font-secondary;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  border:none;
+  transition: $transition;
+  color: $clr-link;
+  &:hover {
+    color: $clr-light;
+}
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  font-size: 18px;
+  line-height: 22px;
+   }
+   @media only screen and (min-width: 120px) and (max-width: 767px) {
+    font-size: 16px;
+    line-height: 20px;
+   }
+
+ }
+ &__show {
+  @media (max-width: 992px) { 
+  display: block;
+  padding: 6px 20px;
+  gap: 12px;
+  display: flex;
+  margin-top: 16px;
+  justify-content: center;
+  flex-direction: column;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+   padding: 12px 30px;
+   gap: 15px;
+   }
+ }
+
+}
+
+
+
+
+
+#navbar__toggle {
+  @media only screen and (min-width: 1025px) { 
+    display: none;
+   }
+  @media (max-width: 992px) {
+    display: block;
+   padding: 1px 5px;
+   }
+}
+
+#navbar__toggle.active .navbar__bar:nth-child(2) {
+  @media (max-width: 992px) {
+    opacity: 0;
+  }
+}
+#navbar__toggle.active .navbar__bar:nth-child(1) {
+  @media (max-width: 992px) {
+    transform: translateY(8px) rotate(45deg);
+  }
+}
+#navbar__toggle.active .navbar__bar:nth-child(3) {
+  @media (max-width: 992px) {
+    transform: translateY(-8px) rotate(-45deg);
+
+  }
+}
+
+#menu {
+  @media (max-width: 992px) {
+    max-height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+  }
+}
+
+#menu.show {
+  @media (max-width: 992px) {
+  visibility: visible;
+  max-height: 100vh; 
+  opacity: 1;
+  height: 100vh; 
+  z-index: 1;
+   background: #803E38;
+   top: 93px;
+   gap: 16px;
+   padding: 16px 20px 0px;
+   display: flex;
+   flex-direction: column;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+     gap: 20px;
+    padding: 20px 40px 0px;
+   }
+   @media only screen and (min-width: 1025px) { 
+     display: flex;
+     justify-items: center;
+     align-items: center;
+     flex-direction: row;   
+      }
+}
+ 
+ .navbar ul>li:hover>ul {
+   visibility: visible;
+   opacity: 1;
+   transform: translateY(0);
+  }
+ 
+
+
+
+  /*BANNER SECTION */
+.banner {
+  background: url(../images/hero.png);
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    height: 50vh;
+   }
+   @media only screen and (min-width: 120px) and (max-width: 767px) {
+  height: 287px;
+  max-width: 100%;
+    }
+    &__content {
+      color: #fff;
+      max-width: 552px;
+      padding-top: 170px;
+      position: absolute;
+      right: 50%;
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        color: #fff;
+        max-width: 474px;
+        padding-top: 170px;
+        position: absolute;
+        /* right: 50%; */
+        padding-left: 40px;
+      }
+      @media only screen and (min-width: 120px) and (max-width: 767px) { 
+        right: 50%;
+        max-width: 552px;
+        padding-top: 50px;
+        padding-left: 10px;
+    
+      }
+    }
+    &__intro {
+      display: block;
+      font-family: "Cookie";
+      font-size: 30px;
+      line-height: 35px;
+      color: #fff;
+      font-weight: 400;
+      padding-bottom: 10px;
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        font-size: 30px;
+        line-height: 35px;
+       }
+    }
+    &__title {
+      display: block;
+      font-family: "Prata";
+      font-size: 70px;
+      line-height: 80px;
+      color: #fff;
+      font-weight: 400;
+      padding-bottom: 20px;
+      @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        font-size: 33px;
+        line-height: 37px;
+       }
+       @media only screen and (min-width: 120px) and (max-width: 767px) {
+        font-size: 23px;
+        line-height: 30px;
+    
+        }
+    }
+}
+
+
+
+
+
+
+.banner__button {
+  display: inline-block;
+  border: 1px solid #483224;
+  font-family: "Barlow";
+  font-size: 16px;
+  line-height: 26px;
+  color: #fff;
+  font-weight: 400;
+  background: #483224 0% 0% no-repeat padding-box;
+  border-radius: 20px 0px;
+  padding: 11px 20px;
+}
+
+.banner__button:hover{
+  transition: ease-out 0.3s;
+  background: #803E38 0% 0% no-repeat padding-box;
+  border-radius: 0;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,1069 @@
+
+/*REOPENING SECTION */
+.reopening {
+  &__wrapper {
+    background: #D1C1A5 0% 0%;
+  text-align: center;
+  padding: 40px 0;
+  margin: 0 auto;
+  }
+  &__title {
+    display: block;
+    font-family: "Prata";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 45px;
+    color: #fff;
+    padding-bottom: 10px;
+  }
+  &__text {
+    display: block;
+    font-family: "Prata";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #803E38;
+    padding-bottom: 20px;
+  }
+}
+
+
+
+
+.reopening__button {
+  display: inline-block;
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  border: 1px solid #483224;
+  color: #fff;
+  background: #483224 0% 0% no-repeat padding-box;
+  border-radius: 20px 0px;
+  padding: 11px 20px;
+}
+.reopening__button:hover{
+  transition: ease-out 0.3s;
+  background: #803E38 0% 0% no-repeat padding-box;
+  border-radius: 0;
+}
+
+
+/*STORY SECTION */
+.story {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    margin: 80px 0;
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      padding: 30px;
+     }
+  }
+  &__wrapper::before {
+    content: "";
+    width: 109px;
+    height: 1px;
+    background: #803E38 0% 0% no-repeat padding-box;
+    position: absolute;
+    left: 47%;
+    top: -40px;
+  }
+  &__wrapper::after {
+    content: "";
+    width: 109px;
+    height: 1px;
+    background: #803E38 0% 0% no-repeat padding-box;
+    position: absolute;
+    left: 47%;
+    bottom: -40px;
+  }
+  &__title {
+    display: block;
+    font-family: "Prata";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 45px;
+    color: #803E38;
+    padding-bottom: 10px;
+    max-width: 950px;
+  }
+  &__text {
+    display: block;
+    font-family: "Barlow";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #483224;
+    padding-bottom: 20px;
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      font-size: 21px;
+     }
+  }
+}
+
+
+
+
+.story__button {
+  display: inline-block;
+  border: 1px solid #483224;
+  font-family: "Barlow";
+  font-size: 16px;
+  line-height: 26px;
+  color: #fff;
+  font-weight: 400;
+  background: #483224 0% 0% no-repeat padding-box;
+  border-radius: 20px 0px;
+  padding: 11px 20px;
+}
+
+.story__button:hover{
+  transition: ease-out 0.3s;
+  background: #803E38 0% 0% no-repeat padding-box;
+  border-radius: 0;
+}
+
+
+
+
+
+/*SALON SECTION */
+.salon {
+  &__services {
+    display: inline-block;
+  font-family: "Cookie";
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #803E38;
+  padding-left: 20px;
+  }
+  &__title {
+    display: block;
+    font-family: "Prata";
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 400;
+    color: #483224;
+    padding: 20px 0;
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      // padding: 31px;
+      line-height: 40px;
+  }
+  @media only screen and (min-width: 120px) and (max-width: 767px) {
+    padding: 9px 0;
+    font-size: 18px;
+    line-height: 40px;
+  
+  }
+  }
+  &__bottom {
+    max-width: 358px;
+  }
+  &__text {
+    display: block;
+    font-family: "Barlow";
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #483224;
+    padding-bottom: 20px;
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+     line-height: 30px;
+     max-width: 300px;
+  }
+  @media only screen and (min-width: 120px) and (max-width: 767px) {
+    color: #803E38;
+    font-size: 15px;
+    line-height: 28px
+    ;
+    max-width: 250px;
+  }
+  }
+  &__holder {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding-bottom: 100px;
+    padding-left: 393px;
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      padding-left: 0;
+      justify-content: flex-end;
+  }
+  @media only screen and (min-width: 120px) and (max-width: 767px) {
+    padding-left: 0;
+    justify-content: flex-end;
+  }
+  }
+  &__first {
+    z-index: 100;
+    position: absolute;
+    left: 200px;
+    top: 44px;
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      left: 60px;
+      top: 44px;
+  }
+  @media only screen and (min-width: 120px) and (max-width: 767px) {
+    left: 0px;
+      top: -10px;
+  }
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+  }
+  &__second {
+    width: 939px;
+    height: 357px;
+    overflow: hidden;
+    position: relative;
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      width: 589px;
+  }
+  @media only screen and (min-width: 120px) and (max-width: 767px) {
+   width: 91%;
+   height: initial;
+  }
+  }
+  &__image:nth-child(1) {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-top-left-radius: 27%;
+  }
+  &__image:nth-child(2) {
+    width: 455px;
+    height: 207px;
+    margin-left: 30.5rem;
+    position: relative;
+    margin-top: 10rem;
+    object-fit: cover;
+    object-position: center;
+    border-top-left-radius: 32%;
+    max-width: 100%;
+    height: auto;
+    margin-left: 30.5rem;
+    position: absolute;
+    border-top-left-radius: 32%;
+    bottom: -88px;
+    overflow: inherit;
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      bottom: -120px;
+      left: -260px;
+  }
+  @media only screen and (min-width: 120px) and (max-width: 767px) {
+    margin: 0;
+    right: -148px;
+    left: auto;
+    position: relative;
+    height: auto;
+    width: 330px;
+  }
+  }
+}
+
+
+
+
+
+.salon__button {
+  display: inline-block;
+  border: 1px solid #483224;
+  font-family: "Barlow";
+  font-size: 16px;
+  line-height: 26px;
+  color: #fff;
+  font-weight: 400;
+  background: #483224 0% 0% no-repeat padding-box;
+  border-radius: 20px 0px;
+  padding: 11px 20px;
+}
+
+.salon__button:hover{
+  transition: ease-out 0.3s;
+  background: #803E38 0% 0% no-repeat padding-box;
+  border-radius: 0;
+}
+
+
+
+
+
+.salon__image:nth-child(1) {
+max-width: 100%;
+height: auto;
+position: absolute;
+left: 0;
+top: 0;
+border-top-left-radius: 27%;
+}
+
+
+
+/*SPA SECTION */
+.spa__holder {
+  position: relative;
+}
+.spa__bottom{
+  max-width: 358px;
+}
+
+.spa__first {
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #803E38 0% 0% no-repeat padding-box;
+  border-radius: 0px 200px 0px 0px;
+  width: 600px;
+  height: 488px;
+  padding-left: 200px;
+  padding-top: 84px;
+  @media only screen and (min-width: 120px) and (max-width: 767px) {
+    border: 0;
+    padding-left: 18px;
+    padding-top: 84px;
+    bottom: 0;
+    height: 500px;
+    width: 300px;
+    top: auto
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+   padding-left: 37px;
+   width: initial;
+   height: 488px;
+    }
+}
+.spa__top {
+  display: flex;
+  align-items: center;
+  @media only screen and (min-width: 120px) and (max-width: 767px) {
+    display: block;
+   }
+}
+.spa__second {
+  overflow: hidden;
+  position: relative;
+  @media only screen and (min-width: 120px) and (max-width: 767px) {
+    width: 100%;
+ 
+   }
+}
+.spa__second img {
+  width: 100%;
+  height: 488px;
+  object-fit: cover;
+  object-position: center;
+  @media only screen and (min-width: 120px) and (max-width: 767px) {
+   height: 580px;
+  }
+}
+.spa__title {
+  display: block;
+  font-family: "Prata";
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 400;
+  color: #fff;
+  padding: 20px 0;
+  @media only screen and (min-width: 120px) and (max-width: 767px) {
+    font-size: 33px;
+    line-height: 45px;
+
+
+  }
+}
+
+.spa__services {
+  display: inline-block;
+  font-family: "Cookie";
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #fff;
+  padding-left: 20px;
+}
+.spa__button {
+  display: inline-block;
+  border: 1px solid #483224;
+  font-family: "Barlow";
+  font-size: 16px;
+  line-height: 26px;
+  color: #fff;
+  font-weight: 400;
+  background: #483224 0% 0% no-repeat padding-box;
+  border-radius: 20px 0px;
+  padding: 11px 20px;
+  margin-bottom: 80px;
+  @media only screen and (min-width: 120px) and (max-width: 767px) {
+
+    margin-bottom: 30px;
+   }
+}
+.spa__button:hover{
+  transition: ease-out 0.3s;
+  background: #D1C1A5 0% 0% no-repeat padding-box;
+  border-radius: 0;
+}
+.spa__text {
+  display: block;
+  font-family: "Barlow";
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+.cfa{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.arrow a {
+  display: inline-block;
+  width: 6px;
+  height: 11px;
+}
+.arrow img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+.cfa .more {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 15px;
+  font-family: "Barlow";
+  font-weight: 400;
+  color: #e7d1a7;
+  margin-left: 10px;
+}
+.spa__wrapper {
+  padding: 0  0 0 393px ;
+  @media only screen and (min-width: 120px) and (max-width: 767px) {
+    padding: 0;
+    overflow: hidden;
+   }
+   @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    padding: 0;
+
+    }
+}
+
+
+/*BRIDAL SECTION */
+
+.bridal {
+   margin: 80px 0;
+ }
+.bridal__wrapper {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  align-items: center;
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    display: block;
+    }
+}
+.bridal__holder {
+  width: 1134px;
+  height: 516px;
+  padding-bottom: 100px;
+  position: relative;
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    width: initial;
+    }
+    @media only screen and (min-width: 120px) and (max-width: 767px) {
+      width: initial;
+   
+     }
+}
+.bridal__second {
+  z-index: 100;
+  position: absolute;
+  width: 468px;
+  height: 516px;
+  top: 0;
+  right: 0;
+  padding: 84px 40px;
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    left: 286px;
+    right: auto;
+    }
+}
+
+.bridal__second::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.45;
+}
+.bridal__content {
+  position: relative;
+}
+.bridal__title {
+  display: block;
+  font-family: "Prata";
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 400;
+  color: #483224;
+  padding: 20px 0;
+}
+
+.bridal__text {
+  display: block;
+  font-family: "Barlow";
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #803E38;
+  padding-bottom: 20px;
+}
+
+.bridal__services {
+  display: inline-block;
+  font-family: "Cookie";
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #803E38;
+  padding-left: 20px;
+}
+.bridal__button {
+  display: inline-block;
+  border: 1px solid #483224;
+  font-family: "Barlow";
+  font-size: 16px;
+  line-height: 26px;
+  color: #fff;
+  font-weight: 400;
+  background: #483224 0% 0% no-repeat padding-box;
+  border-radius: 20px 0px;
+  padding: 11px 20px;
+  margin-bottom: 40px;
+}
+
+.bridal__button:hover{
+  transition: ease-out 0.3s;
+  background: #D1C1A5 0% 0% no-repeat padding-box;
+  border-radius: 0;
+}
+
+.bridal__first {
+  position: relative;
+}
+.bridal__image {
+  background: url(../images/bride.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  object-position: center;
+  width: 1134px;
+  height: 516px;
+  @media only screen and (min-width: 120px) and (max-width: 767px) {
+    width: 500px;
+
+  }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    width: 500px;
+    }
+}
+ .bridal__more {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 15px;
+  font-family: "Barlow";
+  font-weight: 400;
+  color: #803E38;
+  margin-left: 10px;
+}
+.bridal__top {
+  display: flex;
+}
+
+
+/*SALT SECTION */
+.salt {
+  &__holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D1C1A5 0% 0% no-repeat padding-box;
+    @media only screen and (min-width: 120px) and (max-width: 767px) {
+      display: block;;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    display: block;
+    }
+  }
+  &__first {
+    max-width: 552px;
+  }
+  &__second {
+    max-width: 552px;
+    height: auto;
+  }
+  &__image {
+    display: inline-block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  border-bottom-left-radius: 130px;
+  border-top-right-radius: 133px;
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+  }
+  &__title {
+    display: block;
+    color: #fff;
+    font-family: "Prata";
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 400;
+    padding: 20px 0;
+  }
+  &__text {
+    display: block;
+    color: #fff;
+    font-family: "Barlow";
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+  }
+  &__services {
+    display: inline-block;
+    font-family: "Cookie";
+    font-size: 25px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #803E38;
+    padding-left: 20px;
+  }
+  &__content {
+    padding: 30px;
+  }
+}
+/*PRINCIPLES SECTION */
+.principles {
+  &__wrapper {
+    text-align: center;
+    padding: 74px 382px;
+    position: relative;
+    @media only screen and (min-width: 120px) and (max-width: 767px) {
+      padding: 30px;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      padding: 30px;
+  }
+}
+  &__wrapper::before {
+    content: "";
+    width: 109px;
+    height: 1px;
+    background: #803E38;
+    position: absolute;
+    left: 47%;
+    top: 40px;
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      left: 35%;
+      top: 19px;
+      }
+      @media only screen and (min-width: 120px) and (max-width: 767px) {
+        left: 35%;
+        top: 19px;
+      }
+  }
+  &__wrapper::after{
+    content: "";
+    width: 109px;
+    height: 1px;
+    background: #803E38;
+    position: absolute;
+    left: 47%;
+    bottom: 40px;
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      left: 35%;
+    bottom: 19px;
+    @media only screen and (min-width: 120px) and (max-width: 767px) {
+      left: 38%;
+      bottom: 40px;
+    }
+      }
+  }
+  
+  &__title {
+    display: block;
+    font-family: "Prata";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 45px;
+    color: #803E38;
+    padding-bottom: 10px;
+  }
+  &__text {
+    display: block;
+    font-family: "Barlow";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #483224;
+    padding-bottom: 20px;
+  }
+}
+
+
+
+/*CEZANNE SECTION */
+.cezanne {
+  overflow: hidden;
+  &__content {
+    padding-left: 45px;
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    padding-left: 100px;
+    }
+  }
+  &__title {
+    display: block;
+    color: #fff;
+    font-family: "Prata";
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 400;
+    padding: 20px 0;
+    @media only screen and (min-width: 120px) and (max-width: 767px) {
+      font-size: 34;
+      line-height: 40px;
+  
+    }
+  }
+  &__text {
+    display: block;
+    color: #fff;
+    font-family: "Barlow";
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+  }
+  &__services {
+    display: inline-block;
+  font-family: "Cookie";
+  font-size: 25px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #D1C1A5;
+  padding-left: 20px;
+  }
+  &__holder {
+  background-color: #803E38;
+  width: 909px;
+  height: 319px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media only screen and (min-width: 120px) and (max-width: 767px) {
+    width: 100%;
+
+  }
+  
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__first {
+    flex: 1;
+  }
+  &__second {
+    flex: 1;
+    max-width: 100%;
+    width: 100%;
+    width: 909px;
+    height: 319px;
+    @media only screen and (min-width: 120px) and (max-width: 767px) {
+      width: 100%;
+  
+    }
+  }
+  &__more {
+    font-size: 12px;
+    line-height: 15px;
+    display: inline-block;
+    text-decoration: none;
+    color: #D1C1A5;
+    margin-right: 10px;
+  }
+  &__cfa {
+ display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 40px;
+  } display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  justify-content: center;
+  margin-top: 40px;
+  &__image {
+    display: inline-block;
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  }
+  &__top {
+    display: flex;
+  }
+  &__bottom {
+    padding-right: 10px;
+  }
+}
+
+
+
+
+/*FAQ SECTION */
+.faq {
+  &__holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 189px;
+    margin: 40px 0;
+    @media only screen and (min-width: 120px) and (max-width: 767px) {
+      height: initial;
+      padding: 0;
+      flex-direction: column;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      height: initial;
+      padding: 20px;
+      margin: 0;
+      flex-direction: column;
+    }
+  }
+  &__first {
+    padding-right: 170px;
+    @media only screen and (min-width: 120px) and (max-width: 767px) {
+      padding: 0px;
+    }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      padding: 0;
+    }
+  }
+  &__title {
+    display: block;
+    color: #483224;
+    font-family: "Prata";
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 400;
+    padding-bottom: 40px;
+    padding-top: 10px;
+    @media only screen and (min-width: 120px) and (max-width: 767px) {
+      font-size: 33px;
+      line-height: 50px;
+    }
+    @media only screen and (min-width: 120px) and (max-width: 767px) {
+      font-size: 31px;
+        line-height: 50px;
+        text-align: center;
+    }
+  }
+  &__services {
+    display: inline-block;
+    font-family: "Cookie";
+    font-size: 25px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #D1C1A5;
+    padding-left: 20px;
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+
+
+.faq__button {
+  border: 1px solid #483224;
+  font-family: "Barlow";
+  font-size: 16px;
+  line-height: 26px;
+  display: inline-block;
+  font-weight: 400;
+  color: #fff;
+  background: #483224 0% 0% no-repeat padding-box;
+  border-radius: 20px 0px;
+}
+
+.faq__button:hover{
+  transition: ease-out 0.3s;
+  background: #803E38 0% 0% no-repeat padding-box;
+  border-radius: 0;
+}
+
+/*NEWS SECTION */
+.news{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:60px 0;
+  position:relative;
+  gap: 31px;
+  flex-direction: column;
+}
+
+.news__card{
+  width:300px;
+  overflow:hidden;
+  border-radius:11px;
+  border:1px solid #ddd;
+  border-radius: 0px 0px 100px 0px;
+}
+.news .news__card .news__image{
+  width:100%;
+  overflow:hidden;
+  position:relative;
+}
+.news .news__card .news__image img{
+  width:100%;
+  height:auto;
+  object-fit:cover;
+  object-position:center;
+  aspect-ratio:1/1;
+  transition:0.6s;
+}
+
+
+.news__text {
+  padding: 30px
+}
+.news__date {
+  font-family: "Barlow";
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 400;
+  color: #803E38;
+}
+
+.news__middle {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.news__info {
+  font-weight: 400;
+  font-family: "Barlow";
+  font-size: 16px;
+  line-height: 26px;
+  color: #483224;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.news__title {
+  font-weight: 400;
+  font-family: "Prata";
+  font-size: 30px;
+  line-height: 45px;
+  color: #483224;
+  font-size: 30px;
+  padding-bottom: 6px;
+  padding-top: 10px;
+
+}
+
+.news__services {
+  display: inline-block;
+  font-size: 25px;
+  line-height: 30px;
+  font-family: "Cookie";
+  color: #803E38;
+  font-weight: 400;
+}
+
+.news__bottom a {
+  display: inline-block;
+  color: #803E38;
+  font-size: 12px;
+  line-height: 25px;
+  font-weight: 400;
+  font-family: "Barlow";
+}
+.news__card {
+  background-color: white;
+}
+
+.news__card:hover {
+  background-color: #9e5252;
+  transition: ease-out 0.3s;
+}
+.news__card:hover {
+  color: white;
+}
+
+.news__holder {
+  width:100%;
+  height:100%;
+  display:flex;
+   flex-wrap:wrap; 
+  justify-content:center;
+  padding:80px 0;
+  position:relative;
+  font-family:'Manrope';
+  display: flex;
+  justify-content: center;
+  gap: 31px;
+}
+.news__intro {
+  font-size: 30px;
+    line-height: 50px;
+    margin: 0 auto; 
+}
+.news {
+  background-color: #D1C1A5;
+}
+.news__intro {
+  text-align: center;
+  font-size: 50px;
+  line-height: 60px;
+  color: #803E38;
+  font-weight: 400;
+}
+.news__bottom {
+  display: flex;
+}
+.news__top {
+  display: flex;
+}
+.news__top span {
+  margin-left: 10px;
+}
+
+.icon {
+  text-decoration: none;
+}
